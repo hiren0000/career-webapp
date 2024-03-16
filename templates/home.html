@@ -37,6 +37,7 @@
   </head>
   <body>
 
+    {% include'nav.html' %}
 
     <div class="container mt-2 mb-4">
     <h1>Career Page</h1>
@@ -44,11 +45,19 @@
     
      
     <img class="img-fluid" id="banner" src= "https://59dd8c5d-1d80-4002-914f-2a1137267a8c-00-2grnrp2j11era.spock.replit.dev/static/banner.jpg" >
-    
+    <div class=row>
     <h2 class="text-center mt-2 mb-4"">Open Positions</h2>
+     <div class="col-6">
       <p class="lead">
         hksadhhdkshksadhkdkhdhasdhasdhkasj this is a testing website come on man you can do it I know you will do it Python is easist to learn and you can do it in a very short time.
-        
+      </p></div>
+      
+      <div class="col-6">
+        <img class="img-fluid" src="/static/people.jpg" style="height:250px; border-radius:4px;">
+      </div>
+
+    </div>
+      
       <h2 class="text-center mt-2 mb-2"">Open Positions</h2>
 
          {% for job in jobs %}
@@ -61,6 +70,7 @@
         <p class='mt-4'>Copyright 2024, Hiren's Career Page</p>
       </div>
 
+      {% include'footer.html' %}
       
     
     </div>
